@@ -31,7 +31,7 @@
                                     <action selector="onClickUnlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rM8-8q-DyG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wh-Jh-uke">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wh-Jh-uke">
                                 <rect key="frame" x="219.5" y="247.5" width="164.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164.5" id="dtn-nu-x2J"/>
@@ -96,10 +96,10 @@
                                     <color key="baseBackgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onClickUnlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2R-Y5-v09"/>
+                                    <action selector="onClickOpenYouTube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="niT-gh-ti2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-j7-c45">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-j7-c45">
                                 <rect key="frame" x="219.5" y="307.5" width="164.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164.5" id="8cm-U0-fqY"/>
@@ -116,15 +116,15 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164.5" id="fQ5-l5-8D7"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Unlock Phone" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Open Madrasati" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseBackgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onClickUnlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffp-Yh-IAC"/>
+                                    <action selector="onClickOpenMadrasati:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ydi-bi-zUK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-Ec-CnZ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-Ec-CnZ">
                                 <rect key="frame" x="219.5" y="367.5" width="164.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7yM-6c-QNv"/>
@@ -199,9 +199,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="madrasatiStatus" destination="mJk-Ec-CnZ" id="v53-Hk-kJQ"/>
+                        <outlet property="madrasatiSwitch" destination="yRk-vv-2U5" id="miu-Qx-dOB"/>
                         <outlet property="statusLable" destination="2Wh-Jh-uke" id="3gI-zm-3PN"/>
-                        <outlet property="switchUnlock" destination="yRk-vv-2U5" id="COV-yk-oQn"/>
                         <outlet property="textName" destination="0Fo-JK-doO" id="w71-MW-3j7"/>
+                        <outlet property="userNameTxt" destination="Be1-sX-YfU" id="IsP-js-uog"/>
+                        <outlet property="youTubeStatus" destination="UtV-j7-c45" id="UVT-Ju-VlB"/>
+                        <outlet property="youTubeSwitch" destination="YTe-Qc-39A" id="da5-d6-zOa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
