@@ -28,16 +28,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let myColor = UIColor(red: 123, green: 52, blue: 0, alpha: 1).cgColor
+//        let myColor = UIColor(red: 25, green: 100, blue: 24, alpha: 1).cgColor // I got differen color
         // border color
-        let newColor = UIColor.red.cgColor
+        let newColor = UIColor.brown.cgColor
         textName.layer.borderColor = newColor
-        userNameTxt.layer.borderColor = newColor
-        
+        textName.layer.borderColor = .some(newColor)
+        userNameTxt.layer.borderColor = .some(newColor)
+//
         textName.layer.borderWidth = 2
         userNameTxt.layer.borderWidth = 2
-//        textName.clipsToBounds = true
-        textName.borderStyle = .roundedRect
+        
     }
     
     
@@ -55,9 +55,12 @@ class ViewController: UIViewController {
                 if userNameTxt.text == textName.text {
                     statusLable.text = "Allowed ✅"
                     statusLable.textColor = .green
+                    
+                    userNameTxt.layer.borderColor = UIColor.green.cgColor
                 } else {
                     statusLable.text = "Not Allowed ❌"
                     statusLable.textColor = .red
+                    userNameTxt.layer.borderColor = UIColor.red.cgColor
                 }
             } else {
                 
