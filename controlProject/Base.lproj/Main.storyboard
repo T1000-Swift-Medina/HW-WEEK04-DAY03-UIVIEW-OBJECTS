@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylD-MY-r1W">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylD-MY-r1W">
                                 <rect key="frame" x="30" y="247.5" width="164.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164.5" id="fBz-Dp-dq8"/>
@@ -25,10 +25,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Unlock Phone" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.4823529411764706" green="0.20392156862745098" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.4823529411764706" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onClickUnlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rM8-8q-DyG"/>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4P-Fg-SQ6"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wh-Jh-uke">
@@ -66,12 +66,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parental Controls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbZ-uc-1U6">
                                 <rect key="frame" x="0.0" y="447.5" width="414" height="44"/>
-                                <color key="backgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.34252706420002049" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="MMQ-oj-ROw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow access to Madrasati" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC0-xl-Fo3">
@@ -82,9 +82,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRk-vv-2U5">
                                 <rect key="frame" x="335" y="521.5" width="51" height="31"/>
-                                <color key="onTintColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9n-xL-Ylp">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9n-xL-Ylp">
                                 <rect key="frame" x="30" y="307.5" width="164.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0Kd-NQ-3n7"/>
@@ -93,10 +93,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Open Youtube" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onClickOpenYouTube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="niT-gh-ti2"/>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5F-2O-NNr"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-j7-c45">
@@ -109,7 +109,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91P-uA-Qfe">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91P-uA-Qfe">
                                 <rect key="frame" x="30" y="367.5" width="164.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="erq-gf-7gf"/>
@@ -118,10 +118,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Open Madrasati" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onClickOpenMadrasati:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ydi-bi-zUK"/>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f98-7U-fJv"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowd ✅" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-Ec-CnZ">
@@ -142,7 +142,7 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YTe-Qc-39A">
                                 <rect key="frame" x="335" y="592.5" width="51" height="31"/>
-                                <color key="onTintColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.4823529412" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who can unlock this device?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg7-nE-5M8">
                                 <rect key="frame" x="30" y="673.5" width="266" height="24"/>
@@ -206,6 +206,7 @@
                         <outlet property="userNameTxt" destination="Be1-sX-YfU" id="IsP-js-uog"/>
                         <outlet property="youTubeStatus" destination="UtV-j7-c45" id="UVT-Ju-VlB"/>
                         <outlet property="youTubeSwitch" destination="YTe-Qc-39A" id="da5-d6-zOa"/>
+                        <outletCollection property="onPressForAll" destination="ylD-MY-r1W" collectionClass="NSMutableArray" id="47I-Lg-faN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

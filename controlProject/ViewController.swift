@@ -28,56 +28,67 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myColor = UIColor(red: 123, green: 52, blue: 0, alpha: 1)
-        textName.layer.borderColor = myColor.cgColor
+//        let myColor = UIColor(red: 123, green: 52, blue: 0, alpha: 1).cgColor
+        // border color
+        let newColor = UIColor.red.cgColor
+        textName.layer.borderColor = newColor
+        userNameTxt.layer.borderColor = newColor
+        
+        textName.layer.borderWidth = 2
+        userNameTxt.layer.borderWidth = 2
+//        textName.clipsToBounds = true
+        textName.borderStyle = .roundedRect
     }
     
     
-    @IBAction func onClickUnlock(_ sender: UIButton) {
-        madrasatiStatus.isHidden = true
+    @IBOutlet var onPressForAll: [UIButton]!
+    
+    @IBAction func onClick(_ sender: UIButton){
         youTubeStatus.isHidden = true
-        if userNameTxt.text != "" {
-            
-            if userNameTxt.text == textName.text {
-                statusLable.isHidden = false
-                statusLable.text = "Allowed ✅"
-                statusLable.textColor = .green
+        madrasatiStatus.isHidden = true
+        statusLable.isHidden = true
+        switch sender.tag {
+        case 1:
+            statusLable.isHidden = false
+            if userNameTxt.text != "" {
+                
+                if userNameTxt.text == textName.text {
+                    statusLable.text = "Allowed ✅"
+                    statusLable.textColor = .green
+                } else {
+                    statusLable.text = "Not Allowed ❌"
+                    statusLable.textColor = .red
+                }
             } else {
+                
                 statusLable.text = "Not Allowed ❌"
                 statusLable.textColor = .red
             }
-        } else {
-            statusLable.isHidden = false
-            statusLable.text = "Not Allowed ❌"
-            statusLable.textColor = .red
-        }
-    }
-
-    @IBAction func onClickOpenYouTube(_ sender: UIButton) {
-        madrasatiStatus.isHidden = true
-        statusLable.isHidden = true
-        if youTubeSwitch.isOn {
-            youTubeStatus.text = "Allowed ✅"
-            youTubeStatus.textColor = .green
+        case 2:
             youTubeStatus.isHidden = false
-        } else {
-            youTubeStatus.text = "Not Allowed ❌"
-            youTubeStatus.textColor = .red
-        }
-    }
-    
-    @IBAction func onClickOpenMadrasati(_ sender: UIButton) {
-        statusLable.isHidden = true
-        youTubeStatus.isHidden = true
-        if (madrasatiSwitch.isOn) {
-            madrasatiStatus.text = "Allowed ✅"
-            madrasatiStatus.textColor = .green
+            if youTubeSwitch.isOn {
+                youTubeStatus.text = "Allowed ✅"
+                youTubeStatus.textColor = .green
+            } else {
+                youTubeStatus.text = "Not Allowed ❌"
+                youTubeStatus.textColor = .red
+            }
+            
+        case 3:
             madrasatiStatus.isHidden = false
-        } else {
-            madrasatiStatus.text = "Not Allowed ❌"
-            madrasatiStatus.textColor = .red
+            if (madrasatiSwitch.isOn) {
+                madrasatiStatus.text = "Allowed ✅"
+                madrasatiStatus.textColor = .green
+            } else {
+                madrasatiStatus.text = "Not Allowed ❌"
+                madrasatiStatus.textColor = .red
+            }
+        default:
+            print(sender.tag)
         }
-    }
+        
+}
+
 
 }
 
