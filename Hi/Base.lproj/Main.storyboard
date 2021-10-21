@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بك  " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyp-hd-QB4">
+                                <rect key="frame" x="263" y="92" width="83" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="systemBrownColor"/>
+                                <color key="shadowColor" systemColor="systemTealColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل اسمك  هناء " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byp-Uq-GIs">
+                                <rect key="frame" x="20" y="163" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM3-Li-gno">
+                                <rect key="frame" x="281" y="272" width="90" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="افتح  الهاتف"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCJ-o0-UDL">
+                                <rect key="frame" x="276" y="332" width="89" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="افتح يوتيوب"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPD-AW-hGv">
+                                <rect key="frame" x="267" y="381" width="101" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="افتح  مدرستي "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="مفتوح ✅ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-mG-VRD">
+                                <rect key="frame" x="34" y="272" width="74" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="تم الرفض ❎" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCl-KM-MFS">
+                                <rect key="frame" x="36" y="327" width="91" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="مسموح  ✅ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-ty-vEl">
+                                <rect key="frame" x="36" y="376" width="88" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-up-NAb">
+                                <rect key="frame" x="271" y="506" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.4088551453" green="0.84307363359999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" السماح بالوصول الى  YOUTube " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wht-wu-Q9n">
+                                <rect key="frame" x="161" y="629.5" width="223" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zks-ot-qW2">
+                                <rect key="frame" x="36" y="555" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cz1-TN-d8f">
+                                <rect key="frame" x="36" y="609" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من يمكنه فتح هذا الجهاز ؟ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpG-9r-6kn">
+                                <rect key="frame" x="204" y="688" width="180" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل اسم الطفل " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sgS-q9-bO8">
+                                <rect key="frame" x="20" y="763" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text=" الرقابة الأبوية  " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0yM-M0-5Q7">
+                                <rect key="frame" x="0.0" y="452" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" السماح بالوصول الى مدرستي " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJp-KX-Xba">
+                                <rect key="frame" x="187" y="565.5" width="197" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.84037872985945516" green="0.87058823529411766" blue="0.79440786542287123" alpha="0.92607469623591621" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YM3-Li-gno" secondAttribute="trailing" constant="43" id="08B-CI-goE"/>
+                            <constraint firstItem="SwZ-ty-vEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="281-n2-dzX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XpG-9r-6kn" secondAttribute="trailing" constant="30" id="28h-AX-dXS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCJ-o0-UDL" secondAttribute="trailing" constant="49" id="351-KE-hsD"/>
+                            <constraint firstItem="vCl-KM-MFS" firstAttribute="top" secondItem="mGz-mG-VRD" secondAttribute="bottom" constant="14" id="3Z5-oB-tAR"/>
+                            <constraint firstItem="cz1-TN-d8f" firstAttribute="top" secondItem="Zks-ot-qW2" secondAttribute="bottom" constant="23" id="4G4-ST-Ma3"/>
+                            <constraint firstItem="cz1-TN-d8f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="5Bh-Do-HxC"/>
+                            <constraint firstItem="mGz-mG-VRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="5e5-aG-w0T"/>
+                            <constraint firstItem="sgS-q9-bO8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="947-Po-ucX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byp-Uq-GIs" secondAttribute="trailing" constant="20" id="Ago-b6-D7t"/>
+                            <constraint firstItem="wht-wu-Q9n" firstAttribute="top" secondItem="jJp-KX-Xba" secondAttribute="bottom" constant="43.5" id="BFC-HA-JOJ"/>
+                            <constraint firstItem="mGz-mG-VRD" firstAttribute="top" secondItem="byp-Uq-GIs" secondAttribute="bottom" constant="75" id="Bg8-mS-FXX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyp-hd-QB4" secondAttribute="trailing" constant="68" id="D0Z-DT-RRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wht-wu-Q9n" secondAttribute="trailing" constant="30" id="DvM-Xm-tTx"/>
+                            <constraint firstItem="YM3-Li-gno" firstAttribute="top" secondItem="byp-Uq-GIs" secondAttribute="bottom" constant="75" id="EaU-6D-dhP"/>
+                            <constraint firstItem="byp-Uq-GIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KYk-74-ZT5"/>
+                            <constraint firstItem="Gyp-hd-QB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="263" id="MKc-wH-ovq"/>
+                            <constraint firstItem="SwZ-ty-vEl" firstAttribute="top" secondItem="vCl-KM-MFS" secondAttribute="bottom" constant="8" symbolic="YES" id="Q0f-fQ-Fbr"/>
+                            <constraint firstItem="vCl-KM-MFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Ryx-Mt-Mb3"/>
+                            <constraint firstItem="sgS-q9-bO8" firstAttribute="top" secondItem="XpG-9r-6kn" secondAttribute="bottom" constant="54" id="TFn-AG-Mn4"/>
+                            <constraint firstItem="PCJ-o0-UDL" firstAttribute="top" secondItem="YM3-Li-gno" secondAttribute="bottom" constant="29" id="TpB-lW-1fj"/>
+                            <constraint firstItem="XpG-9r-6kn" firstAttribute="top" secondItem="wht-wu-Q9n" secondAttribute="bottom" constant="38" id="USd-VT-1Qq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPD-AW-hGv" secondAttribute="trailing" constant="46" id="V5j-zZ-QU3"/>
+                            <constraint firstItem="Gyp-hd-QB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="WnD-jq-viH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jJp-KX-Xba" secondAttribute="trailing" constant="30" id="YXO-pw-Ycd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sgS-q9-bO8" secondAttribute="trailing" constant="20" id="fei-DY-Nsn"/>
+                            <constraint firstItem="Zks-ot-qW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="gAW-0G-O4U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sgS-q9-bO8" secondAttribute="bottom" constant="65" id="iba-5j-XwS"/>
+                            <constraint firstItem="sgS-q9-bO8" firstAttribute="top" secondItem="cz1-TN-d8f" secondAttribute="bottom" constant="123" id="mQg-XT-ZRU"/>
+                            <constraint firstItem="byp-Uq-GIs" firstAttribute="top" secondItem="Gyp-hd-QB4" secondAttribute="bottom" constant="46" id="mob-Fn-PEC"/>
+                            <constraint firstItem="LPD-AW-hGv" firstAttribute="top" secondItem="PCJ-o0-UDL" secondAttribute="bottom" constant="18" id="qjB-5s-pW8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemBrownColor"/>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
