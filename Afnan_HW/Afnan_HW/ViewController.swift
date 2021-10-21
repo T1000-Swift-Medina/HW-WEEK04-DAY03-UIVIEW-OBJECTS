@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         { labelOne.text = "Access Denied"
          
             
-        }else {
+        } else {
         if (nameKid.text == nameUser.text)
         {
             labelOne.text = "Allowed"
