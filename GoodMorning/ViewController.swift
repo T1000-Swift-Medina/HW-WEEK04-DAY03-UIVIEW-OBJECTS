@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var SwitchYOUT: UISwitch!
     @IBOutlet weak var Unlock: UILabel!
-    
     @IBOutlet weak var EnterName: UITextField!
+    @IBOutlet weak var AllowMad: UILabel!
+    @IBOutlet weak var KidName: UITextField!
+   
     
     @IBAction func PhoneUnlock(_ sender: Any) {
         if (EnterName.text == "Afaf"){
@@ -46,10 +48,6 @@ class ViewController: UIViewController {
     
     }
     
-   
-    @IBOutlet weak var AllowMad: UILabel!
-    
-    @IBOutlet weak var KidName: UITextField!
    
 
     }
