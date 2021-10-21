@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     @IBAction func phonepress(_ sender: Any) {
      
         if (namelabel.text == kidlabel.text) {
-            unlock.text = "Unlocked ✅"}
+            unlock.text = "Unlocked ✅"
+            amadd.setOn(true, animated: true)
+        }
         else{
             unlock.text = "the name and kid name is diffrent"
         }
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
     }
    
     @IBAction func youtubepress1(_ sender: Any) {
-        if  youtubeacess.isOn && namelabel.text == kidlabel.text{
+        if   namelabel.text == kidlabel.text{
             denied.text = "access denied ❌"
             youtubeacess.setOn(false, animated: true)
             
@@ -45,28 +47,30 @@ class ViewController: UIViewController {
         else{
             denied.text = "the name and kid name is diffrent"
         }
+        
         if let _text = namelabel.text, _text.isEmpty  {
-            youtubeacess.setOn(true, animated: true)
+           
             denied.text = "locked make sure the name and kid name is not empty"
         }
             else if let _text2 = kidlabel.text, _text2.isEmpty{
-                youtubeacess.setOn(true, animated: true)
+              
                 denied.text = "locked make sure the name and kid name is not empty"
             }
-    }
-   
+}
     @IBAction func madrastipress(_ sender: Any) {
         if amadd.isOn && namelabel.text == kidlabel.text{
             allowed.text = "allowed ✅"
-            amadd.setOn(true, animated: true)
+            amadd.setOn(true, animated: false)
         }
         else{
             allowed.text = "the name and kid name is diffrent"
         }
         if let _text = namelabel.text, _text.isEmpty  {
+         
             allowed.text = "locked make sure the name and kid name is not empty"
         }
             else if let _text2 = kidlabel.text, _text2.isEmpty{
+           
                 allowed.text = "locked make sure the name and kid name is not empty"
             }
         
