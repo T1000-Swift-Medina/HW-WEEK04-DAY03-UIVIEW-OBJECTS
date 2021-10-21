@@ -40,6 +40,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PhoneUnlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cL-eC-NRZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-8v-DGE">
                                 <rect key="frame" x="46" y="312" width="139.5" height="51"/>
@@ -52,6 +55,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="OpenYouTube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9b-cs-OCV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z6-zN-FWK">
                                 <rect key="frame" x="46" y="405" width="139.5" height="48.5"/>
@@ -63,6 +69,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="OpenMadrasti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVr-8O-QCd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlocke ✅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6f-sD-PpP">
                                 <rect key="frame" x="244.5" y="225" width="140.5" height="49"/>
@@ -113,16 +122,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AoL-Al-bwg">
                                 <rect key="frame" x="311" y="605" width="51" height="31"/>
-                                <connections>
-                                    <action selector="AccMAD:" destination="BYZ-38-t0r" eventType="valueChanged" id="ida-by-Y5Z"/>
-                                    <action selector="SwichMD:" destination="BYZ-38-t0r" eventType="valueChanged" id="cJk-J3-pZY"/>
-                                </connections>
                             </switch>
-                            <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvY-aS-y2C">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvY-aS-y2C">
                                 <rect key="frame" x="311" y="666" width="51" height="31"/>
-                                <connections>
-                                    <action selector="AccYT:" destination="BYZ-38-t0r" eventType="valueChanged" id="phF-Kq-rwN"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who can unlock this device?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEn-qY-kya">
                                 <rect key="frame" x="46" y="719" width="249" height="24"/>
@@ -213,7 +215,9 @@
                         <outlet property="AllowMad" destination="kEK-48-Qee" id="aDw-0V-zI6"/>
                         <outlet property="Allowed" destination="xNY-UI-Iih" id="2ru-Qq-VFE"/>
                         <outlet property="EnterName" destination="jlP-lE-e37" id="12q-h9-ykI"/>
+                        <outlet property="SwitchYOUT" destination="fvY-aS-y2C" id="fiA-qb-P5q"/>
                         <outlet property="Unlock" destination="f6f-sD-PpP" id="N8T-HP-VfQ"/>
+                        <outlet property="switchMad" destination="AoL-Al-bwg" id="aEc-ag-mqh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
