@@ -44,6 +44,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="unlockPhone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1WS-Dp-FPo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6u-DQ-9pQ">
                                 <rect key="frame" x="20" y="268" width="155" height="35"/>
@@ -57,6 +60,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="openYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0G-md-6EB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0et-lF-98o">
                                 <rect key="frame" x="20" y="323" width="155" height="35"/>
@@ -70,6 +76,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="openMadrasati:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UcE-TI-mrB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvk-eI-HGH">
                                 <rect key="frame" x="195" y="219" width="199" height="24"/>
@@ -200,6 +209,15 @@
                             <constraint firstItem="0et-lF-98o" firstAttribute="top" secondItem="R6u-DQ-9pQ" secondAttribute="bottom" constant="20" id="z3I-5A-aJO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelOne" destination="Uvk-eI-HGH" id="VGm-l9-qZs"/>
+                        <outlet property="labelThree" destination="vWO-Xf-31l" id="x86-e6-hOv"/>
+                        <outlet property="labelTow" destination="e9b-79-6Vb" id="INt-eV-8Pu"/>
+                        <outlet property="nameKid" destination="mPe-WB-nYo" id="aPM-sa-zKI"/>
+                        <outlet property="nameUser" destination="BRO-Nj-LKi" id="ChO-rN-vJU"/>
+                        <outlet property="switchMadrasati" destination="XOC-05-Jdi" id="b3o-ZT-er8"/>
+                        <outlet property="switchYoutube" destination="Ge3-Sg-Ixc" id="fYx-Wp-D4e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
