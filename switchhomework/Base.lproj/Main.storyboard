@@ -91,7 +91,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="hqd-3c-Zuh" firstAttribute="leading" secondItem="fiJ-yP-KXQ" secondAttribute="leading" constant="20" id="ILH-Vw-SO8"/>
                                     <constraint firstAttribute="height" constant="67" id="Mjb-Ir-H8E"/>
@@ -203,6 +203,8 @@
                         <outlet property="allowed" destination="pHt-HD-bgN" id="zjc-HC-HVH"/>
                         <outlet property="amadd" destination="Prr-5S-ebd" id="B4m-N8-8Il"/>
                         <outlet property="denied" destination="jIb-AA-NCg" id="ZY3-o5-XWM"/>
+                        <outlet property="kidlabel" destination="S0d-ss-HsT" id="mao-nz-uqg"/>
+                        <outlet property="namelabel" destination="8lS-1v-yqa" id="Q04-wU-v2d"/>
                         <outlet property="unlock" destination="hbq-Mn-7Cx" id="2Nj-TR-yTi"/>
                         <outlet property="youtubeacess" destination="bmf-Zu-dDY" id="IZX-rB-kZ5"/>
                     </connections>

@@ -14,25 +14,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var denied: UILabel!
     @IBOutlet weak var allowed: UILabel!
     @IBOutlet weak var acessmad: UILabel!
-  
+    @IBOutlet weak var namelabel: UITextField!
+    
+    @IBOutlet weak var kidlabel: UITextField!
     @IBOutlet weak var amadd: UISwitch!
     
  
     @IBOutlet weak var youtubeacess: UISwitch!
     @IBAction func phonepress(_ sender: Any) {
-        unlock.text = "Unlocked ✅"
+        if namelabel.text == kidlabel.text{
+            unlock.text = "Unlocked ✅"}
     }
     
    
     @IBAction func youtubepress1(_ sender: Any) {
-        if  youtubeacess.isOn{
+        if  youtubeacess.isOn && namelabel.text == kidlabel.text{
             denied.text = "access denied ❌"
-            youtubeacess.setOn(false, animated: false)
+            youtubeacess.setOn(false, animated: true)
         }
     }
    
     @IBAction func madrastipress(_ sender: Any) {
-        allowed.text = "allowed ✅"
+        if amadd.isOn && namelabel.text == kidlabel.text{
+            allowed.text = "allowed ✅"
+            amadd.setOn(true, animated: true)
+            
+        }
+        
     }
     
     
