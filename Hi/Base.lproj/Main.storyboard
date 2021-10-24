@@ -31,32 +31,39 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM3-Li-gno">
                                 <rect key="frame" x="281" y="272" width="90" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="افتح  الهاتف"/>
+                                <buttonConfiguration key="configuration" style="plain" title="افتح  الهاتف">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owP-FM-AMA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCJ-o0-UDL">
                                 <rect key="frame" x="276" y="332" width="89" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="افتح يوتيوب"/>
+                                <connections>
+                                    <action selector="YOU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbh-yq-yMb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPD-AW-hGv">
                                 <rect key="frame" x="267" y="381" width="101" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="افتح  مدرستي "/>
+                                <connections>
+                                    <action selector="school:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e9v-pU-Vgu"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="مفتوح ✅ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-mG-VRD">
-                                <rect key="frame" x="34" y="272" width="74" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفتوح ✅ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-mG-VRD">
+                                <rect key="frame" x="36" y="262" width="74" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="تم الرفض ❎" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCl-KM-MFS">
-                                <rect key="frame" x="36" y="327" width="91" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="مسموح  ✅ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-ty-vEl">
-                                <rect key="frame" x="36" y="376" width="88" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تم الرفض ❎" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCl-KM-MFS">
+                                <rect key="frame" x="28" y="322" width="91" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -105,44 +112,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مسموح  ✅ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-ty-vEl">
+                                <rect key="frame" x="28" y="381" width="88" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.84037872985945516" green="0.87058823529411766" blue="0.79440786542287123" alpha="0.92607469623591621" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YM3-Li-gno" secondAttribute="trailing" constant="43" id="08B-CI-goE"/>
-                            <constraint firstItem="SwZ-ty-vEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="281-n2-dzX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XpG-9r-6kn" secondAttribute="trailing" constant="30" id="28h-AX-dXS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCJ-o0-UDL" secondAttribute="trailing" constant="49" id="351-KE-hsD"/>
-                            <constraint firstItem="vCl-KM-MFS" firstAttribute="top" secondItem="mGz-mG-VRD" secondAttribute="bottom" constant="14" id="3Z5-oB-tAR"/>
                             <constraint firstItem="cz1-TN-d8f" firstAttribute="top" secondItem="Zks-ot-qW2" secondAttribute="bottom" constant="23" id="4G4-ST-Ma3"/>
                             <constraint firstItem="cz1-TN-d8f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="5Bh-Do-HxC"/>
-                            <constraint firstItem="mGz-mG-VRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="5e5-aG-w0T"/>
                             <constraint firstItem="sgS-q9-bO8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="947-Po-ucX"/>
+                            <constraint firstItem="vCl-KM-MFS" firstAttribute="top" secondItem="mGz-mG-VRD" secondAttribute="bottom" constant="39.5" id="AWi-f4-nv4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byp-Uq-GIs" secondAttribute="trailing" constant="20" id="Ago-b6-D7t"/>
                             <constraint firstItem="wht-wu-Q9n" firstAttribute="top" secondItem="jJp-KX-Xba" secondAttribute="bottom" constant="43.5" id="BFC-HA-JOJ"/>
-                            <constraint firstItem="mGz-mG-VRD" firstAttribute="top" secondItem="byp-Uq-GIs" secondAttribute="bottom" constant="75" id="Bg8-mS-FXX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gyp-hd-QB4" secondAttribute="trailing" constant="68" id="D0Z-DT-RRc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wht-wu-Q9n" secondAttribute="trailing" constant="30" id="DvM-Xm-tTx"/>
                             <constraint firstItem="YM3-Li-gno" firstAttribute="top" secondItem="byp-Uq-GIs" secondAttribute="bottom" constant="75" id="EaU-6D-dhP"/>
                             <constraint firstItem="byp-Uq-GIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KYk-74-ZT5"/>
+                            <constraint firstItem="vCl-KM-MFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="LB0-Zx-u3D"/>
                             <constraint firstItem="Gyp-hd-QB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="263" id="MKc-wH-ovq"/>
-                            <constraint firstItem="SwZ-ty-vEl" firstAttribute="top" secondItem="vCl-KM-MFS" secondAttribute="bottom" constant="8" symbolic="YES" id="Q0f-fQ-Fbr"/>
-                            <constraint firstItem="vCl-KM-MFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Ryx-Mt-Mb3"/>
+                            <constraint firstItem="SwZ-ty-vEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="PaL-lQ-V4F"/>
                             <constraint firstItem="sgS-q9-bO8" firstAttribute="top" secondItem="XpG-9r-6kn" secondAttribute="bottom" constant="54" id="TFn-AG-Mn4"/>
                             <constraint firstItem="PCJ-o0-UDL" firstAttribute="top" secondItem="YM3-Li-gno" secondAttribute="bottom" constant="29" id="TpB-lW-1fj"/>
                             <constraint firstItem="XpG-9r-6kn" firstAttribute="top" secondItem="wht-wu-Q9n" secondAttribute="bottom" constant="38" id="USd-VT-1Qq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPD-AW-hGv" secondAttribute="trailing" constant="46" id="V5j-zZ-QU3"/>
+                            <constraint firstItem="mGz-mG-VRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="VRs-4m-m4c"/>
                             <constraint firstItem="Gyp-hd-QB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="WnD-jq-viH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jJp-KX-Xba" secondAttribute="trailing" constant="30" id="YXO-pw-Ycd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sgS-q9-bO8" secondAttribute="trailing" constant="20" id="fei-DY-Nsn"/>
                             <constraint firstItem="Zks-ot-qW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="gAW-0G-O4U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sgS-q9-bO8" secondAttribute="bottom" constant="65" id="iba-5j-XwS"/>
+                            <constraint firstItem="mGz-mG-VRD" firstAttribute="top" secondItem="byp-Uq-GIs" secondAttribute="bottom" constant="65" id="k2s-hP-bJh"/>
                             <constraint firstItem="sgS-q9-bO8" firstAttribute="top" secondItem="cz1-TN-d8f" secondAttribute="bottom" constant="123" id="mQg-XT-ZRU"/>
                             <constraint firstItem="byp-Uq-GIs" firstAttribute="top" secondItem="Gyp-hd-QB4" secondAttribute="bottom" constant="46" id="mob-Fn-PEC"/>
+                            <constraint firstItem="SwZ-ty-vEl" firstAttribute="top" secondItem="vCl-KM-MFS" secondAttribute="bottom" constant="38.5" id="osb-Wf-sbA"/>
                             <constraint firstItem="LPD-AW-hGv" firstAttribute="top" secondItem="PCJ-o0-UDL" secondAttribute="bottom" constant="18" id="qjB-5s-pW8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hi" destination="Gyp-hd-QB4" id="P2S-qw-I3D"/>
+                        <outlet property="intrnem" destination="byp-Uq-GIs" id="3r2-J5-qqC"/>
+                        <outlet property="nem" destination="sgS-q9-bO8" id="K97-0P-sSt"/>
+                        <outlet property="statusOpen" destination="mGz-mG-VRD" id="uV4-fO-ZJi"/>
+                        <outlet property="statusSchool" destination="SwZ-ty-vEl" id="tNk-wz-Cn0"/>
+                        <outlet property="statusYou" destination="vCl-KM-MFS" id="bAe-rq-zB2"/>
+                        <outlet property="switchSchool" destination="Zks-ot-qW2" id="ckO-85-Zba"/>
+                        <outlet property="switchYou" destination="cz1-TN-d8f" id="366-9k-lY1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,6 +182,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
