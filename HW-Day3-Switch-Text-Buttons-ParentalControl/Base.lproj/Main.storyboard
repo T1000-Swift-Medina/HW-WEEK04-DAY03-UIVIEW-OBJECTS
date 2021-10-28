@@ -76,6 +76,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djJ-e5-UbS">
                                 <rect key="frame" x="359" y="501.33333333333326" width="51" height="31"/>
                                 <color key="onTintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="onclick:" destination="BYZ-38-t0r" eventType="valueChanged" id="F9t-et-rL8"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow access to Youtube" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eq-hK-0j1">
                                 <rect key="frame" x="30" y="577.66666666666663" width="299" height="24"/>
@@ -86,6 +89,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YOt-WT-aiR">
                                 <rect key="frame" x="359" y="572.33333333333337" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="valueChanged" id="rx7-zz-mFl"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who can unlock this device?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgp-Y3-sUH">
                                 <rect key="frame" x="30" y="641.66666666666663" width="368" height="24"/>
