@@ -97,9 +97,16 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9K-2G-8dD">
                                 <rect key="frame" x="325" y="562" width="51" height="31"/>
+                                <connections>
+                                    <action selector="madrasati_button:" destination="BYZ-38-t0r" eventType="valueChanged" id="03j-ov-ioG"/>
+                                    <action selector="onswitchmadrasti:" destination="BYZ-38-t0r" eventType="valueChanged" id="gIC-Cl-W3h"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrA-PG-LqR">
                                 <rect key="frame" x="325" y="623" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q84-oJ-xXk"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who can unlock this device?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hiv-Dc-oBQ">
                                 <rect key="frame" x="40" y="681" width="334" height="21"/>
