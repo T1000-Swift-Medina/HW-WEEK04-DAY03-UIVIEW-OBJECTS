@@ -58,14 +58,6 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXL-vo-cjS">
-                                <rect key="frame" x="317" y="524" width="51" height="31"/>
-                                <connections>
-                                    <action selector="SwichMD:" destination="BYZ-38-t0r" eventType="valueChanged" id="7dI-sH-yqc"/>
-                                    <action selector="swichmadrasti:" destination="BYZ-38-t0r" eventType="valueChanged" id="FAB-6d-nx7"/>
-                                    <action selector="swichmadrsti:" destination="BYZ-38-t0r" eventType="valueChanged" id="s3Q-cn-KUD"/>
-                                </connections>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Denied❌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St9-OZ-E2R">
                                 <rect key="frame" x="257" y="334" width="144" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -117,12 +109,14 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="KidName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="VEa-cd-zCd"/>
-                                    <action selector="kidName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xIK-xj-ruZ"/>
-                                    <action selector="kidname:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cVK-hn-RRX"/>
-                                </connections>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXL-vo-cjS">
+                                <rect key="frame" x="317" y="524" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SwichMD:" destination="BYZ-38-t0r" eventType="valueChanged" id="7dI-sH-yqc"/>
+                                    <action selector="onmadrasti:" destination="BYZ-38-t0r" eventType="valueChanged" id="mBb-KG-C8g"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -174,14 +168,8 @@
                         <outlet property="Access" destination="St9-OZ-E2R" id="pOe-vW-Ivo"/>
                         <outlet property="Allowed" destination="Yiz-LS-S8q" id="XLw-t3-Ip1"/>
                         <outlet property="KidName" destination="9rJ-th-xOX" id="jmg-1q-dol"/>
-                        <outlet property="controls" destination="8tk-j1-dVy" id="HJg-y3-CLN"/>
-                        <outlet property="device" destination="c2M-E2-jTN" id="fAn-iT-KfN"/>
-                        <outlet property="faildname" destination="zHy-Bh-kcH" id="T8e-oU-fXE"/>
-                        <outlet property="kidName" destination="9rJ-th-xOX" id="yH3-YY-lvd"/>
-                        <outlet property="madrasti" destination="sCw-ZX-9at" id="tfH-g1-F7C"/>
-                        <outlet property="swichMadrsati" destination="UXL-vo-cjS" id="k9h-5K-p26"/>
-                        <outlet property="unlocked" destination="3V4-FN-HLN" id="x8K-B3-wVx"/>
-                        <outlet property="youtube" destination="jT7-yd-FPP" id="hLw-7a-QXy"/>
+                        <outlet property="swichmad" destination="UXL-vo-cjS" id="hZT-d2-Hh4"/>
+                        <outlet property="swichyou" destination="bAx-mF-jdk" id="OFf-lE-XxN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
