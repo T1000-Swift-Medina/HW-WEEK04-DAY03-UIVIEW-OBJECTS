@@ -32,16 +32,25 @@
                                 <rect key="frame" x="40" y="235.66666666666666" width="67" height="30.999999999999972"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="butten1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MML-p4-eif"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjB-gd-LLe">
                                 <rect key="frame" x="40" y="296.66666666666669" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="buteen2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DD9-Gr-2t4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTB-21-aZF">
                                 <rect key="frame" x="39" y="362" width="67" height="31.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="buteen3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iqK-Io-qhT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlocked✅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-gS-bGD">
                                 <rect key="frame" x="275" y="230" width="95" height="42.333333333333314"/>
@@ -146,6 +155,15 @@
                             <constraint firstItem="PjB-gd-LLe" firstAttribute="top" secondItem="elN-OW-Q5i" secondAttribute="bottom" constant="30" id="zi0-Jz-96B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lable1" destination="a6q-gS-bGD" id="7PL-RY-wni"/>
+                        <outlet property="lable2" destination="9KE-rO-6Zf" id="bPg-lC-9Km"/>
+                        <outlet property="lable3" destination="90G-P8-UXR" id="2s2-b2-0yX"/>
+                        <outlet property="switchM" destination="S1M-nw-IkO" id="wjI-kf-YOh"/>
+                        <outlet property="switchY" destination="U36-QT-1WP" id="WMa-yg-WAf"/>
+                        <outlet property="textName1" destination="PfJ-Eq-J7x" id="xTG-Dg-Hj0"/>
+                        <outlet property="textName2" destination="96A-21-VZ3" id="VrC-qz-nRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
