@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var youTubeSwitch: UISwitch!
     
     
+    let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,17 +39,24 @@ class ViewController: UIViewController {
         textName.layer.borderWidth = 2
         userNameTxt.layer.borderWidth = 2
         
+        let isYoutubeAllowed = UserDefaults.standard.bool(forKey: "Youtube")
+        let isMadrasatiAllowed = UserDefaults.standard.bool(forKey: "Madrasati")
+        let isKidAllowed = UserDefaults.standard.string(forKey: "kidName")
+        
+        youTubeSwitch.isOn = isYoutubeAllowed
+        madrasatiSwitch.isOn = isMadrasatiAllowed
+        textName.text = isKidAllowed
     }
-    
-    
-    @IBOutlet var onPressForAll: [UIButton]!
     
     @IBAction func onClick(_ sender: UIButton){
         youTubeStatus.isHidden = true
         madrasatiStatus.isHidden = true
         statusLable.isHidden = true
+        
         switch sender.tag {
         case 1:
+            
+            UserDefaults.standard.set(textName.text, forKey: "kidName")
             statusLable.isHidden = false
             if userNameTxt.text != "" {
                 
@@ -68,6 +76,8 @@ class ViewController: UIViewController {
                 statusLable.textColor = .red
             }
         case 2:
+            
+            UserDefaults.standard.set(youTubeSwitch.isOn, forKey: "Youtube")
             youTubeStatus.isHidden = false
             if youTubeSwitch.isOn {
                 youTubeStatus.text = "Allowed ✅"
@@ -78,6 +88,8 @@ class ViewController: UIViewController {
             }
             
         case 3:
+            
+            UserDefaults.standard.set(madrasatiSwitch.isOn, forKey: "Madrasati")
             madrasatiStatus.isHidden = false
             if (madrasatiSwitch.isOn) {
                 madrasatiStatus.text = "Allowed ✅"

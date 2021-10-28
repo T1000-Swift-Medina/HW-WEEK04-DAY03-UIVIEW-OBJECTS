@@ -214,7 +214,6 @@
                         <outlet property="userNameTxt" destination="Be1-sX-YfU" id="IsP-js-uog"/>
                         <outlet property="youTubeStatus" destination="UtV-j7-c45" id="UVT-Ju-VlB"/>
                         <outlet property="youTubeSwitch" destination="g1b-uG-ibV" id="vAc-3l-QVi"/>
-                        <outletCollection property="onPressForAll" destination="ylD-MY-r1W" collectionClass="NSMutableArray" id="47I-Lg-faN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
