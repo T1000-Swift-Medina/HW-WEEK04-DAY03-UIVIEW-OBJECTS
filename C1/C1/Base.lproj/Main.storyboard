@@ -82,6 +82,9 @@
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="voQ-Ez-XQz">
                                 <rect key="frame" x="315" y="646" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onYutube:" destination="BYZ-38-t0r" eventType="valueChanged" id="ewR-3b-PQF"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkC-4F-L67">
                                 <rect key="frame" x="30" y="311" width="177" height="44"/>
@@ -115,6 +118,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0a-AO-X3l">
                                 <rect key="frame" x="320" y="581" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onMadrasati:" destination="BYZ-38-t0r" eventType="valueChanged" id="cnT-3v-fh7"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
