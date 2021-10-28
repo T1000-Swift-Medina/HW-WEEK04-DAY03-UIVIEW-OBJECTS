@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "...."; ObjectID = "3H5-Is-Fcq"; */
+"3H5-Is-Fcq.text" = "....";
+
+/* Class = "UILabel"; text = "...."; ObjectID = "3Ut-nh-6ea"; */
+"3Ut-nh-6ea.text" = "....";
+
+/* Class = "UILabel"; text = "من يمكنه فتح هذا الجهاز؟"; ObjectID = "6DI-Ku-HMQ"; */
+"6DI-Ku-HMQ.text" = "من يمكنه فتح هذا الجهاز؟";
+
+/* Class = "UIButton"; configuration.title = "افتح YouTube"; ObjectID = "8dp-Wn-6rX"; */
+"8dp-Wn-6rX.configuration.title" = "افتح YouTube";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8dp-Wn-6rX"; */
+"8dp-Wn-6rX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "السماح للوصول الى YouTube"; ObjectID = "A4S-oo-T6D"; */
+"A4S-oo-T6D.text" = "السماح للوصول الى YouTube";
+
+/* Class = "UITextField"; placeholder = "ادخل اسم الطفل"; ObjectID = "GrX-7C-OMn"; */
+"GrX-7C-OMn.placeholder" = "ادخل اسم الطفل";
+
+/* Class = "UIButton"; configuration.title = "افتح الهاتف"; ObjectID = "Hjg-Hv-unr"; */
+"Hjg-Hv-unr.configuration.title" = "افتح الهاتف";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Hjg-Hv-unr"; */
+"Hjg-Hv-unr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "الرقابة الأولية"; ObjectID = "JVF-cZ-Raw"; */
+"JVF-cZ-Raw.text" = "الرقابة الأولية";
+
+/* Class = "UITextField"; placeholder = "ادخل اسمك هنا"; ObjectID = "exq-Cc-rVP"; */
+"exq-Cc-rVP.placeholder" = "ادخل اسمك هنا";
+
+/* Class = "UILabel"; text = "مرحبا بك"; ObjectID = "jxx-DA-jCI"; */
+"jxx-DA-jCI.text" = "مرحبا بك";
+
+/* Class = "UILabel"; text = "السماح بالوصول ألى مدرستي"; ObjectID = "mKz-76-nU8"; */
+"mKz-76-nU8.text" = "السماح بالوصول ألى مدرستي";
+
+/* Class = "UILabel"; text = "....."; ObjectID = "uJ3-V1-igT"; */
+"uJ3-V1-igT.text" = ".....";
+
+/* Class = "UIButton"; configuration.title = "افتح مدرستي"; ObjectID = "w8C-IZ-67B"; */
+"w8C-IZ-67B.configuration.title" = "افتح مدرستي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "w8C-IZ-67B"; */
+"w8C-IZ-67B.normalTitle" = "Button";
