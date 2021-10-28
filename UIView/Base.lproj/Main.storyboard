@@ -112,9 +112,15 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq2-Ev-wPY">
                                 <rect key="frame" x="294" y="600" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onYouTube:" destination="BYZ-38-t0r" eventType="valueChanged" id="B44-7J-k7w"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-rl-2Sl">
                                 <rect key="frame" x="294" y="664" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onMad:" destination="BYZ-38-t0r" eventType="valueChanged" id="xrO-px-St7"/>
+                                </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the kid name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4wZ-8j-FCM">
                                 <rect key="frame" x="20" y="771" width="374" height="34"/>
