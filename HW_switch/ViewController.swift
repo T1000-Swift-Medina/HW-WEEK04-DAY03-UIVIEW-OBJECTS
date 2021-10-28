@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITextFieldDelegate {
     
     
     @IBOutlet weak var access_Phone: UILabel!
@@ -25,12 +25,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var kidName: UITextField!
     
     
-    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UserDefaults.standard.set(kidName.text , forKey: "name")
+    }
     
     //phone--------------------------------------------
     
     @IBAction func phone(_ sender: Any) {
         
+         
         if(kidName.text == name.text){
             access_Phone.text = "Unlocked ✅"
             access_Phone.textColor = .green
@@ -44,7 +47,7 @@ class ViewController: UIViewController {
     //youtube--------------------------------
     
     @IBAction func youtube(_ sender: Any) {
-       
+        
         if(access_Youtube.isOn){
             accessYoutube.text = "allow ✅"
            accessYoutube.textColor = .green
@@ -58,7 +61,6 @@ class ViewController: UIViewController {
     
     @IBAction func Open_madrasati(_ sender: Any) {
         
-        
          if(sccess_Madrasati.isOn){
             accessMadrasati.text = "allowed ✅"
            accessMadrasati.textColor = .green
@@ -70,14 +72,36 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func onSwitchYoutube(_ sender: Any) {
+        UserDefaults.standard.set(access_Youtube.isOn , forKey: "youtube")
+    }
     
+    @IBAction func onSwitchMadrasa(_ sender: Any) {
+        
+        UserDefaults.standard.set(sccess_Madrasati.isOn , forKey: "madrasati")
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+       
+        let isYoutubAllowed = UserDefaults.standard.bool(forKey: "youtube")
+        access_Youtube.isOn = isYoutubAllowed
+        
+        let isMadrasatiAllowed = UserDefaults.standard.bool(forKey: "madrasati")
+        sccess_Madrasati.isOn = isMadrasatiAllowed
+        
+        kidName.delegate = self
+        kidName.text = UserDefaults.standard.string(forKey: "name")
+     
     }
 
 
+    
+    
 }
+
 

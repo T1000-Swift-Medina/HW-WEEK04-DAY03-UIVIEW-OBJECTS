@@ -74,9 +74,15 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SrI-Qc-GtL">
                                 <rect key="frame" x="339" y="585.33333333333337" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchMadrasa:" destination="BYZ-38-t0r" eventType="valueChanged" id="aLx-Pg-mtS"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-E6-hUp">
                                 <rect key="frame" x="339" y="644.33333333333337" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchYoutube:" destination="BYZ-38-t0r" eventType="valueChanged" id="QGt-Sx-8rH"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who can unlock this device ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIO-Pi-M2f">
                                 <rect key="frame" x="40" y="713.33333333333337" width="348" height="21"/>
