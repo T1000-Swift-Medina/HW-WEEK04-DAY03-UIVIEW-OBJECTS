@@ -24,10 +24,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var SwitchMadrasti: UISwitch!
     @IBOutlet weak var SwitchYoutube: UISwitch!
     @IBAction func ButtonPhone(_ sender: Any) {
+        UserDefaults.standard.set(YourName.text, forKey: "nameSave")
         
         if YourName.text == "" || KidName.text == "" {
             LabelUnlockPhone.text = "Not Allowed ❌"
             return
+            
         }
         
         if YourName.text == KidName.text {
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func ButtonYoutube(_ sender: Any) {
+        UserDefaults.standard.set(SwitchYoutube.isOn, forKey: "YoutubeSave")
         if (SwitchYoutube.isOn){
             LabelYoutube.text = "Allowed ✅"}
         else {
@@ -46,18 +49,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func ButtonMadrasti(_ sender: Any) {
+        UserDefaults.standard.set(SwitchMadrasti.isOn, forKey: "MadrastiSave")
         if (SwitchMadrasti.isOn)
         { LabelMadrasti.text = "Allowed ✅"}
         else {
             LabelMadrasti.text = "NotAllowed ❌"
         }
     }
-    
-    
-    
 
     override func viewDidLoad() {
+      
         super.viewDidLoad()
+        let SaveMadrasti = UserDefaults.standard.bool(forKey: "MadrastiSave")
+        SwitchMadrasti.isOn = SaveMadrasti
+        let SaveYoutube = UserDefaults.standard.bool(forKey: "YoutubeSave")
+        SwitchYoutube.isOn = SaveYoutube
+        let SaveNAme = UserDefaults.standard.string(forKey: "nameSave")
+        YourName.text = SaveNAme
         // Do any additional setup after loading the view.
     }
 
