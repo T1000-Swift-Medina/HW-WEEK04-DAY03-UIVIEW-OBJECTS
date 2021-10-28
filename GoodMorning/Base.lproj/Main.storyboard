@@ -215,6 +215,7 @@
                         <outlet property="AllowMad" destination="kEK-48-Qee" id="aDw-0V-zI6"/>
                         <outlet property="Allowed" destination="xNY-UI-Iih" id="2ru-Qq-VFE"/>
                         <outlet property="EnterName" destination="jlP-lE-e37" id="12q-h9-ykI"/>
+                        <outlet property="KidName" destination="LwU-HM-xWK" id="V6r-TK-lkW"/>
                         <outlet property="SwitchYOUT" destination="fvY-aS-y2C" id="fiA-qb-P5q"/>
                         <outlet property="Unlock" destination="f6f-sD-PpP" id="N8T-HP-VfQ"/>
                         <outlet property="switchMad" destination="AoL-Al-bwg" id="aEc-ag-mqh"/>
