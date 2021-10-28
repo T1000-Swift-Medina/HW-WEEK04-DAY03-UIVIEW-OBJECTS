@@ -83,9 +83,15 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zks-ot-qW2">
                                 <rect key="frame" x="36" y="555" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SC:" destination="BYZ-38-t0r" eventType="valueChanged" id="6fv-2Y-XLM"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cz1-TN-d8f">
                                 <rect key="frame" x="36" y="609" width="51" height="31"/>
+                                <connections>
+                                    <action selector="yo:" destination="BYZ-38-t0r" eventType="valueChanged" id="z0A-rB-VNE"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من يمكنه فتح هذا الجهاز ؟ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpG-9r-6kn">
                                 <rect key="frame" x="204" y="688" width="180" height="21"/>
