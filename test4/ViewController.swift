@@ -12,18 +12,30 @@ class ViewController: UIViewController, UITextViewDelegate {
     
 
     @IBAction func unlockPhone(_ sender: Any) {
-       
-        if (textField.text != textFildeKidsName.text || textFildeKidsName.text!.isEmpty == true || textField.text!.isEmpty == true) {
+ 
+        UserDefaults.standard.set(textFildeKidsName.text, forKey: "KidsName")
+
+        textField.text = textField.text?.trimmingCharacters(in: .whitespaces)
+        textFildeKidsName.text = textFildeKidsName.text?.trimmingCharacters(in: .whitespaces)
+
+//        if (textField.text != textFildeKidsName.text || textFildeKidsName.text!.isEmpty == true || textField.text!.isEmpty == true) {
+//            labelPhone.text = "  Not Allowed ❌ "
+//
+//       }
+        
+        if (textField.text == "" || textFildeKidsName.text == "") {
             labelPhone.text = "  Not Allowed ❌ "
-     
+            return
         }
         
-        if (textFildeKidsName.text == textField.text && textFildeKidsName.text!.isEmpty == false && textField.text!.isEmpty == false) {
+        if (textFildeKidsName.text == textField.text) {
             print("Allowd")
             labelPhone.text = " Allowed ✅ "
         }
     }
     @IBAction func openYoutube(_ sender: Any) {
+        UserDefaults.standard.set(SwitchYoutube.isOn, forKey: "Youtube")
+        
         if (SwitchYoutube.isOn == true) {
             
             lableYoutube.text = " Allowed ✅ "
@@ -32,6 +44,8 @@ class ViewController: UIViewController, UITextViewDelegate {
             }
         }
     @IBAction func openMadasti(_ sender: Any) {
+       
+        UserDefaults.standard.set(SwitchMadrasti.isOn, forKey: "Madrasti")
         if (SwitchMadrasti.isOn == true) {
             lableMadrasati.text = " Allowed ✅ "
         }else{
@@ -39,8 +53,23 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
     }
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        let isYoutubeAllowed = UserDefaults.standard.bool(forKey: "Youtube")
+        SwitchYoutube.isOn = isYoutubeAllowed
+        
+        let isMadrssati = UserDefaults.standard.bool(forKey: "Madrasti")
+        SwitchMadrasti.isOn = isMadrssati
+        
+        let istextFelid = UserDefaults.standard.string(forKey: "KidsName")
+        textFildeKidsName.text = istextFelid
     }
+    
+    
+    
 }
+
