@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var EnterYourName: UITextField!
     
@@ -28,7 +28,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var TextFiled2: UITextField!
     
-    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UserDefaults.standard.set(TextFiled2.text, forKey: "Name")
+    }
     @IBAction func UnlockPhone(_ sender: Any)
     {
         if(TextFiled2.text == EnterYourName.text)
@@ -67,12 +69,36 @@ class ViewController: UIViewController {
     
   
     
+    @IBAction func switchMadrasti(_ sender: Any) {
+        UserDefaults.standard.set(switchMadrasati.isOn, forKey: "Madrasati")
+        
+    }
+    
+    @IBAction func switchYoutube(_ sender: Any) {
+        UserDefaults.standard.set(switchYoutube.isOn, forKey: "youtube")
+        
+    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        TextFiled2.delegate = self
+        TextFiled2.text = UserDefaults.standard.string(forKey: "Name")
+       
+//        UserDefaults.standard.set(EnterYourName.text, forKey: "Name")
+        
+        
+        let isYoutubeAllowed = UserDefaults.standard.bool(forKey: "youtube")
+        switchYoutube.isOn = isYoutubeAllowed
+        let isMad = UserDefaults.standard.bool(forKey: "Madrasati")
+        switchMadrasati.isOn = isMad
+        
+      
+    
+    
     }
-
 
 }
 
