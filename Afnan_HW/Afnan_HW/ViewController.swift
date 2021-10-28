@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  , UITextFieldDelegate{
 
     @IBOutlet weak var nameUser: UITextField!
     @IBOutlet weak var labelOne: UILabel!
@@ -56,8 +56,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        nameKid.delegate = self
+        let isYoutubeAllowed = UserDefaults.standard.bool(forKey: "Youtube")
+        switchYoutube.isOn = isYoutubeAllowed
+        let isMadrasatiAllowed = UserDefaults.standard.bool(forKey: "Madrasati")
+        switchMadrasati.isOn = isMadrasatiAllowed
+        let iskidesName = UserDefaults.standard.string(forKey: "namekids")
+        nameKid.text = iskidesName
     }
 
-
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UserDefaults.standard.set(nameKid.text, forKey: "namekids")
+    }
+    
+    @IBAction func SwitchM(_ sender: Any) {
+        UserDefaults.standard.set(switchMadrasati.isOn , forKey: "Madrasati")
+    }
+    
+    @IBAction func SwitchY(_ sender: Any) {
+        UserDefaults.standard.set(switchYoutube.isOn, forKey: "Youtube")
+    }
 }
 
