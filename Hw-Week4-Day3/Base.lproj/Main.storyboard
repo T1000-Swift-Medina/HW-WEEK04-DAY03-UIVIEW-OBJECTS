@@ -68,9 +68,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                     <color key="baseBackgroundColor" red="0.24954850770000001" green="0.57607348830000005" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="madrasti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4M-Hx-4mm"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-2n-EgW">
                                 <rect key="frame" x="172" y="235" width="222" height="26.5"/>
@@ -114,10 +111,16 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3I-E6-Eqf">
                                 <rect key="frame" x="343" y="576.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.24954850770000001" green="0.57607348830000005" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSwitchMadrasati:" destination="BYZ-38-t0r" eventType="valueChanged" id="UDb-eP-7N4"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2m-vo-MJe">
                                 <rect key="frame" x="343" y="646.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.24954850770000001" green="0.57607348830000005" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSwichYoutube:" destination="BYZ-38-t0r" eventType="valueChanged" id="amp-BD-7bg"/>
+                                </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the kid name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPm-Fi-zDY">
                                 <rect key="frame" x="20" y="784" width="374" height="39.5"/>

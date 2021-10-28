@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var yourName: UITextField!
     
@@ -55,12 +55,42 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        
-        
+        kidName.delegate = self
         // Do any additional setup after loading the view.
+        
+        //UserDefaults.standard.set(statusSwitchYouTube.isOn, forKey: "Youtube")
+        //UserDefaults.standard.set(statusSwitchMadrasati.isOn, forKey: "Madrasati")
+
+        //UserDefaults.standard.set(kidName.text, forKey: "kidName")
+        
+        let isYoutubeAllowed = UserDefaults.standard.bool(forKey: "Youtube")
+        statusSwitchYouTube.isOn = isYoutubeAllowed
+        
+        let isMadrasatiAllowed = UserDefaults.standard.bool(forKey: "Madrasati")
+        statusSwitchMadrasati.isOn = isMadrasatiAllowed
+        
+        let isKidName = UserDefaults.standard.string(forKey: "kidName")
+        
+        kidName.text = isKidName
+        
     }
 
-
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UserDefaults.standard.set(kidName.text, forKey: "kidName")
+    }
+    
+    @IBAction func onSwitchMadrasati(_ sender: Any) {
+        
+        UserDefaults.standard.set(statusSwitchMadrasati.isOn, forKey: "Madrasati")
+    }
+    
+    @IBAction func onSwichYoutube(_ sender: Any) {
+        UserDefaults.standard.set(statusSwitchYouTube.isOn, forKey: "Youtube")
+    }
+    
+//    @IBAction func enterKidName(_ sender: Any) {
+//        UserDefaults.standard.set(kidName.text, forKey: "kidName")
+//    }
 }
+
 
