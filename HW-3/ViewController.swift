@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtName2: UITextField!
     
     @IBAction func button1(_ sender: Any) {
-    
+        
+        UserDefaults.standard.set(txtName2.text, forKey: "Name")
+        
         if txtName.text == txtName2.text {
         label1.text = "Allowed ✅"
     }else{
@@ -28,6 +30,9 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button2(_ sender: Any) {
+        
+        UserDefaults.standard.set(switch1.isOn, forKey: "Youtube")
+        
         if (switch1.isOn) {
             label2.text = "Allowed ✅"
         }else{
@@ -35,6 +40,9 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button3(_ sender: Any) {
+        
+        UserDefaults.standard.set(switch2.isOn, forKey: "Madrasati")
+        
         if (switch2.isOn) {
             label3.text = "Allowed ✅"
         }else{
@@ -44,6 +52,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let isYoutubeAllowed = UserDefaults.standard.bool(forKey: "Youtube")
+        switch1.isOn = isYoutubeAllowed
+        
+        let isMadrasati = UserDefaults.standard.bool(forKey: "Madrasati")
+        switch2.isOn = isMadrasati
+        
+        let saveName = UserDefaults.standard.string(forKey: "Name")
+        txtName2.text = saveName
+
+       
+        
+
     }
 
 }
