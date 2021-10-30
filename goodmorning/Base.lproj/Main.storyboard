@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,6 +33,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameDefault:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="m8Y-o7-hS8"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vo-pb-Wxq">
                                 <rect key="frame" x="60" y="264" width="114" height="20"/>
@@ -47,7 +50,7 @@
                                     <color key="baseForegroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Unlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQM-XD-TMP"/>
+                                    <action selector="Unlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jF7-CQ-Fe8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dk-G0-Y2l">
@@ -62,9 +65,6 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="OpenYotube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLA-i9-MXZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsj-9i-yQ0">
                                 <rect key="frame" x="60" y="336" width="127" height="20"/>
@@ -78,9 +78,6 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="OpenMadrasati:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nsu-bh-28N"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlocked ✅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-Fe-AJ0">
                                 <rect key="frame" x="274" y="264" width="100" height="10"/>
@@ -149,16 +146,27 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="kidNameDefault:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YlC-Fb-A9g"/>
+                                </connections>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3H-u4-YQj">
                                 <rect key="frame" x="325" y="589" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemGray4Color"/>
                                 <color key="thumbTintColor" red="0.54891266490000001" green="0.3319775969" blue="0.49104492449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="Mswitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="3yn-7p-4KR"/>
+                                    <action selector="OpenMadrasati:" destination="BYZ-38-t0r" eventType="valueChanged" id="5bQ-ti-TkU"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUK-Ri-gns">
                                 <rect key="frame" x="325" y="644" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemGray4Color"/>
                                 <color key="thumbTintColor" red="0.54891266490000001" green="0.3319775969" blue="0.49104492449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="OpenYotube:" destination="BYZ-38-t0r" eventType="valueChanged" id="tgt-kQ-DGp"/>
+                                    <action selector="Yswitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="teu-RF-plB"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
