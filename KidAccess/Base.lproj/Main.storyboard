@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -56,6 +56,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.46661928846233103" green="0.74303582702020199" blue="0.44983371779638787" alpha="0.53399213576158944" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="UnlockPhone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mum-qG-1Iw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB2-44-dQZ">
                                 <rect key="frame" x="21" y="311" width="190" height="60"/>
@@ -69,6 +72,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.52118409158453149" green="0.69039970573535347" blue="0.64454169696976849" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="UnlockYoutube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L12-Ap-F32"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S1-EW-9Ba">
                                 <rect key="frame" x="21" y="401" width="190" height="60"/>
@@ -82,6 +88,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.52877987132352944" green="0.70046164772727271" blue="0.65393530057708082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="UnlockMadrasati:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ep-wY-EyB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="allow access to madrasti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MER-u9-zgv">
                                 <rect key="frame" x="20" y="571" width="239.5" height="35"/>
@@ -206,6 +215,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZKT-sY-bSA" secondAttribute="trailing" constant="20" id="zUk-CC-GkU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="KidName" destination="Wet-0n-OF5" id="kAj-aI-icN"/>
+                        <outlet property="MadrastiLabel" destination="ZKT-sY-bSA" id="d3f-lG-S2V"/>
+                        <outlet property="NameLabel" destination="u3s-F2-nbL" id="QmQ-Xt-pwo"/>
+                        <outlet property="PhoneLabel" destination="IxR-Pi-8Pc" id="EWt-LD-Lpv"/>
+                        <outlet property="YoutubeLabel" destination="zU5-1W-0BP" id="z69-Cz-Y2Z"/>
+                        <outlet property="accMadrasati" destination="hJK-Ki-BFL" id="JpN-kV-Gm6"/>
+                        <outlet property="accYoutube" destination="b7F-9V-hb6" id="gHj-YJ-UYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
