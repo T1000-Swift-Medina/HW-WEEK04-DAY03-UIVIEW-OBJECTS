@@ -36,9 +36,11 @@ class ViewController: UIViewController {
         else if let _text2 = kidlabel.text, _text2.isEmpty{
             unlock.text = "locked make sure the name and kid name is not empty"
         }
+        UserDefaults.standard.setValue(namelabel.text, forKey: "name")
     }
    
     @IBAction func youtubepress1(_ sender: Any) {
+        
         if   namelabel.text == kidlabel.text{
             denied.text = "access denied ❌"
             youtubeacess.setOn(false, animated: true)
@@ -56,6 +58,9 @@ class ViewController: UIViewController {
               
                 denied.text = "locked make sure the name and kid name is not empty"
             }
+    
+        UserDefaults.standard.setValue(youtubeacess.isOn, forKey: "youtube")
+        
 }
     @IBAction func madrastipress(_ sender: Any) {
         if amadd.isOn && namelabel.text == kidlabel.text{
@@ -73,15 +78,24 @@ class ViewController: UIViewController {
            
                 allowed.text = "locked make sure the name and kid name is not empty"
             }
-        
+        UserDefaults.standard.setValue(amadd.isOn, forKey: "madrsati")
     }
+    
+    
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let name = UserDefaults.standard.string(forKey: "name")
+        namelabel.text = name
+       
+        let youtube = UserDefaults.standard.bool(forKey: "youtube")
+        amadd.isOn = youtube
+       
+        let mad = UserDefaults.standard.bool(forKey: "madrsati")
+        amadd.isOn = mad
+       
         
-        
-        
-    
     }}
 
