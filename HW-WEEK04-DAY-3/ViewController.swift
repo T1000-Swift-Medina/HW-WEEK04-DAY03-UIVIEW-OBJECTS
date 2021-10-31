@@ -16,12 +16,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Reading User Defualt Data
+        
+             let youtupeDefualt = UserDefaults.standard.bool(forKey: "Youtupe")
+                  accYoutube.isOn = youtupeDefualt
+
+             let name = UserDefaults.standard.string(forKey: "name1")
+                  nameText.text = name
+        
+             let madrastiDefualt = UserDefaults.standard.bool(forKey: "madrasti")
+                accMadrasati.isOn = madrastiDefualt
+
     }
     
     
     @IBAction func unlock(_ sender: Any) {
-        
+        //Setting User Defualt Data
+
+        UserDefaults.standard.set(nameText.text, forKey: "name1")
+
         if(nameText.text == ""){
             labl1.text = "Please enter your name"
             
@@ -37,6 +51,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func openYoutupe(_ sender: Any) {
+        //Setting User Defualt Data
+
+        UserDefaults.standard.set(accYoutube.isOn, forKey: "Youtupe")
+
         if(nameText.text == ""){
             labl2.text = "Please enter your name"
             
@@ -50,6 +68,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openMadrasati(_ sender: Any) {
+        //Setting User Defualt Data
+
+        UserDefaults.standard.set(accMadrasati.isOn, forKey: "madrasti")
          if(nameText.text == ""){
             lbl3.text = "Please enter your name"
             
@@ -64,6 +85,7 @@ class ViewController: UIViewController {
         }
         
     }
+    
     
     
     
