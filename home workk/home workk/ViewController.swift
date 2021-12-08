@@ -24,63 +24,59 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var swichyou: UISwitch!
     
     @IBAction func pHONE(_ sender: Any) {
-        if (FullName.text == "Reem"){
-            Unlock.text = "Unlock ✅"
-        } else {
-            Unlock.text = "Not Unlock ❌"
-        }
         
-    }
-    
+        if(KidName.text == FullName.text){
+              Unlock.text = "Unlocked :white_check_mark:"
+              Unlock.textColor = .green
+            }else {
+              Unlock.text = " not Allowed :x:"
+             Unlock.textColor = .red
+            }
+          }
     
     @IBAction func Open(_ sender: Any) {
-        if (FullName.text == "Reem"){
-            Access.text = "Access Denied ✅"
-        } else {
-            Access.text = "Not Access Denied ❌"
-        }
-    }
-    
+        if(swichyou.isOn){
+            Access.text = "allow :white_check_mark:"
+            Access.textColor = .green
+            }else{
+                Access.text = "Access Denied :x:"
+                Access.textColor = .red
+            }
+          }
+
+
     
     
     @IBAction func Madrasati(_ sender: Any) {
-        if (FullName.text == "Reem"){
-            Allowed.text = "Allowed ✅"
-        } else {
-            Allowed.text = "Not Allowed ❌"
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        UserDefaults.standard.set(KidName.text, forKey: "TextName")
-    }
+        if(swichmad.isOn){
+            Allowed.text =  "allowed :white_check_mark:"
+            Allowed.textColor = .green
+             }else{
+                 Allowed.text = "not allowed :x:"
+                 Allowed.textColor = .red
+             }
+          }
     
     @IBAction func onmadrasti(_ sender: Any) {
         UserDefaults.standard.set(swichmad.isOn,forKey: "Madrasti")
         
     }
     
-    @IBAction func swichyou(_ sender: Any) {
-        UserDefaults.standard.set(swichyou.isOn, forKey: "Youtube")
-    }
+//    @IBAction func swichyou(_ sender: Any) {
+//        UserDefaults.standard.set(swichyou.isOn, forKey: "Youtube")
+//    }
     
     @IBAction func SwichMD(_ sender: UISwitch) {
-        if (KidName.text == "Fars"){
-            Allowed.text = "Allowed ✅"
-        } else {
-            Allowed.text = "Not Allowed ❌"
-        }
+    
+        UserDefaults.standard.set(swichmad.isOn,forKey: "Madrasti")
         
     }
+
     
     @IBAction func SwichYU(_ sender: Any) {
-        if (KidName.text == "Reem"){
-            Access.text = "Access Denied ✅"
-        } else {
-            Access.text = "Not Access Denied ❌"
+            UserDefaults.standard.set(swichyou.isOn, forKey: "Youtube")
         }
-    }
-    
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()

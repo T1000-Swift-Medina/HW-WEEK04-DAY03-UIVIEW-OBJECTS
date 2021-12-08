@@ -83,6 +83,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Unlocked Phone">
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pHONE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyc-UG-qdD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-t6-lIN">
                                 <rect key="frame" x="20" y="334" width="116" height="31"/>
@@ -91,6 +94,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Open Youtube">
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNk-5I-yjZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpK-xX-Re0">
                                 <rect key="frame" x="15" y="393" width="127" height="31"/>
@@ -167,7 +173,9 @@
                     <connections>
                         <outlet property="Access" destination="St9-OZ-E2R" id="pOe-vW-Ivo"/>
                         <outlet property="Allowed" destination="Yiz-LS-S8q" id="XLw-t3-Ip1"/>
+                        <outlet property="FullName" destination="zHy-Bh-kcH" id="d44-ez-hc8"/>
                         <outlet property="KidName" destination="9rJ-th-xOX" id="jmg-1q-dol"/>
+                        <outlet property="Unlock" destination="3V4-FN-HLN" id="aWn-qT-QWm"/>
                         <outlet property="swichmad" destination="UXL-vo-cjS" id="hZT-d2-Hh4"/>
                         <outlet property="swichyou" destination="bAx-mF-jdk" id="OFf-lE-XxN"/>
                     </connections>
